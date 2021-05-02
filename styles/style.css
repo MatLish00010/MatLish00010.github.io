@@ -711,7 +711,6 @@ label {
       display: -ms-flexbox;
       display: flex; }
   .c-invitation__link {
-    min-width: 9.375rem;
     width: 100%;
     background: #F8F4EB;
     padding: 0.625rem 1.875rem;
