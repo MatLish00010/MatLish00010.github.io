@@ -579,11 +579,12 @@ label {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
-    -webkit-flex-direction: row-reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse; }
+    -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    padding-bottom: 1.25rem; }
     .data__list-item.coming {
       background-color: #29b298; }
 
@@ -626,6 +627,15 @@ label {
     transition: 0.3s; }
     .data__sublist-remove:hover {
       background-color: red; }
+
+@media screen and (min-width: 48rem) {
+  .data__list-item {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: row-reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    padding-bottom: 0; } }
 
 .t-base {
   -webkit-box-flex: 1;
